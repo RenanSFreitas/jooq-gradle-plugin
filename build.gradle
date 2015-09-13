@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+
+group='rsf'
+version = '0.9.9'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+    compile 'org.jooq:jooq:3.6.1'
+    compile 'org.jooq:jooq-meta:3.6.1'
+    compile 'org.jooq:jooq-codegen:3.6.1'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: mavenLocal().url)
+            pom.groupId = rootProject.group
+            pom.artifactId = project.name
+            pom.version = rootProject.version                
+        }
+    }
+}
