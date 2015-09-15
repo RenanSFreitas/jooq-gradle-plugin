@@ -1,10 +1,10 @@
 # jooq-gradle-plugin
-JOOQ Code generation Gradle Plugin
+jOOQ Code generation Gradle Plugin
 =====================
 
 A gradle plugin for DB schema classes generation using JOOQ. 
 
-JOOQ is a Java based framework for interacting with different DBMS's. JOOQ can generate code for classses representing database entities. 
+jOOQ is a Java based framework for interacting with different DBMS's. jOOQ can generate code for classses representing database entities. 
 
 For reference, see http://www.jooq.org/doc/3.4/manual/getting-started/tutorials/jooq-in-7-steps/jooq-in-7-steps-step3/.
 
